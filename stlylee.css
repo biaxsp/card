@@ -1,19 +1,18 @@
-root{
-    --cor-hover:#fff;
-
+:root{
+    --cor-hover: white;
 }
 
+/*Resetar todas as caracteristicas*/
 *{
     padding: 0;
     margin: 0;
-    box-sizing: 0;
-
+    box-sizing: border-box;
 }
 
 ul, ol, li{
     list-style: none;
-
 }
+
 a{
     text-decoration: none;
     color: inherit;
@@ -25,21 +24,73 @@ a{
     display: flex;
     justify-content: end;
     gap: 16px;
-    padding: 16px;
-
+    padding: 8px;
 }
-
 li{
     padding: 4px 8px;
-    transition: 1s;
+    transition: 0.5s;
 }
-
 li:hover{
     background-color: var(--cor-hover);
-
-    
+}
+.menu img{
+    height: 45px;
 }
 
-.menu img{
-    height: 16px;
+
+.container {
+    padding-top: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.novoBloco{
+    background: white;
+    box-shadow: 0px 4px 10px black; /* Colocar uma sombra no Card */
+    border-radius: 10px;
+    padding: 17px;
+    width: 30vh;
+    height: 60vh;
+    text-align: center;
+}
+
+.novoBloco:hover{
+    box-shadow: 0px 4px 10px var(--cor-hover);
+}
+
+.novoBloco img{
+    height: 15vh;
+    width: 25vh;
+    border-radius: 10px; /* Deixar a borda redonda */
+}
+
+.novoBloco h1{
+    font-size: 30px;
+    padding: 15px;
+}
+
+.novoBloco p{
+    width: 240px;
+    text-align: center;
+    color: gray;
+}
+
+.novoBloco span{
+    font-size: 20px;
+}
+
+.novoBloco h2{
+    color: var(--cor-hover);
+    padding: 10px;
+}
+
+.novoBloco button{
+    height: 5vh;
+    width: 15vh;
+    color: var(--cor-hover);
+    border: none;
+    padding: 10px;
 }
